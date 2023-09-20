@@ -1,0 +1,25 @@
+{
+  "week":[
+    { "id": 1, "dayOfWeek": "Lunes" },
+    { "id": 2, "dayOfWeek": "Martes" },
+    { "id": 3, "dayOfWeek": "Miercoles" },
+    { "id": 4, "dayOfWeek": "Jueves" },
+    { "id": 5, "dayOfWeek": "Viernes" },
+    { "id": 6, "dayOfWeek": "Sabado" },
+    { "id": 7, "dayOfWeek": "Domingo" }
+  ],
+  "months": [
+    { "id": 1,  "monthOfYear": "Enero" },
+    { "id": 2,  "monthOfYear": "Febrero" },
+    { "id": 3,  "monthOfYear": "Marzo" },
+    { "id": 4,  "monthOfYear": "Abril" },
+    { "id": 5,  "monthOfYear": "Mayo" },
+    { "id": 6,  "monthOfYear": "Junio" },
+    { "id": 7,  "monthOfYear": "Julio" },
+    { "id": 8,  "monthOfYear": "Agosto" },
+    { "id": 9,  "monthOfYear": "Septiembre" },
+    { "id": 10, "monthOfYear": "Octubre" },
+    { "id": 11, "monthOfYear": "Noviembre" },
+    { "id": 12, "monthOfYear": "Diciembre" }
+  ]
+}

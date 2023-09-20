@@ -1,0 +1,41 @@
+<div class="card">
+  <p-table [value]="calendario"
+           styleClass="p-datatable-gridlines"
+           [tableStyle]="{ 'min-width': '50rem' }"
+           *ngFor="let calendar of calendario;"
+           class="p-3">
+    <ng-template pTemplate="caption">
+      {{ calendar.month }} - {{ calendar.year}}
+    </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <td *ngFor="let day of calendar.semana" style="text-align: center;">{{ day.diaSemana }}</td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-week>
+      <tr>
+        <td *ngFor="let dia of calendar.semana" style="text-align: center;">
+          <hr>
+          <h3 *ngFor="let dias of dia.dias"
+              [ngStyle]="{'color': currentDay === dias[0] ? 'white' :
+                                   dias[1] === true ? 'white':dia.color,
+                          'background-color': currentDay === dias[0] ? 'red':
+                                              dias[1] === true ? 'orange':'none',
+                          'border-radius': currentDay === dias[0] ? '80%':
+                                           dias[1] === true && '80%'}">
+              {{ dias[0] !== 0 ? dias[0] : '&nbsp;' }}
+            <hr>
+          </h3>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+
+
+<button (click)="previousMonth()">
+  previous month
+</button>
+<button (click)="nextMonth()">
+  next month
+</button>
