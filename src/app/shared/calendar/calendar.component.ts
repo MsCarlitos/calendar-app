@@ -91,7 +91,7 @@ export class CalendarComponent implements OnInit{
 
       if( i === 1 ){
         if( weekDay === 1) {
-          domingo.push([0, false]);
+          domingo.push([0 , false]);
         }
         if( weekDay === 2) {
           domingo.push([0, false]);
